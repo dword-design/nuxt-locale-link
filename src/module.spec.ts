@@ -42,7 +42,7 @@ test('locale link', async ({ page }, testInfo) => {
   });
 
   const port = await getPort();
-  const nuxt = execaCommand('nuxt dev', { cwd, env: { PORT: port } });
+  const nuxt = execaCommand('nuxt dev', { cwd, env: { PORT: port }, stderr: 'inherit' });
 
   try {
     await nuxtDevReady(port);
