@@ -1,0 +1,56 @@
+{
+  "name": "@dword-design/nuxt-locale-link",
+  "version": "1.0.0",
+  "repository": "dword-design/nuxt-locale-link",
+  "funding": "https://github.com/sponsors/dword-design",
+  "license": "MIT",
+  "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/module.js",
+        "types": "./dist/module.d.ts"
+      }
+    }
+  },
+  "main": "dist/module.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "checkUnknownFiles": "base checkUnknownFiles",
+    "commit": "base commit",
+    "depcheck": "base depcheck",
+    "dev": "base dev",
+    "lint": "base lint",
+    "prepare": "base prepare",
+    "prepublishOnly": "base prepublishOnly",
+    "test": "base test"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.17.5"
+  },
+  "devDependencies": {
+    "@dword-design/base": "^13.0.6",
+    "@dword-design/base-config-nuxt-module": "^2.0.1",
+    "@nuxtjs/i18n": "^9.5.5",
+    "@playwright/test": "^1.53.0",
+    "depcheck-package-name": "^3.0.1",
+    "endent": "npm:@dword-design/endent@^1.4.1",
+    "execa": "^9.6.0",
+    "get-port": "^7.1.0",
+    "nuxt-dev-ready": "^3.0.0",
+    "output-files": "^2.0.32",
+    "playwright": "^1.53.0",
+    "playwright-chromium": "^1.53.0",
+    "tree-kill-promise": "^3.0.14"
+  },
+  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
