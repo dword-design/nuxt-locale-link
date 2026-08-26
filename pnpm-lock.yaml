@@ -40,8 +40,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       output-files:
-        specifier: ^2.0.32
-        version: 2.0.32
+        specifier: ^4.0.0
+        version: 4.0.0
       playwright:
         specifier: ^1.53.0
         version: 1.53.0
@@ -315,7 +315,7 @@ packages:
   '@dword-design/defu@1.0.0':
     resolution: {integrity: sha512-TSeItFcOEB9xUlw745+l9M+uU9bn6SaOH2q4uy2IFtmHbPYzLHsFEaaBvScD1XqKnxVyqOK4UtnFibv8Ja1ffA==}
     engines: {node: '>=18'}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+    deprecated: Use @dword-design/defaults
 
   '@dword-design/depcheck-parser-sass@4.0.4':
     resolution: {integrity: sha512-liMT6tgQ/YfhNgW6rigOaY0XqfNMMFb+DCwEeLtfBdTJhMUEHwBb8UsChw8uwrxMSQW/YsabfnDsT897pBmBlg==}
@@ -2448,6 +2448,7 @@ packages:
   cron-parser@4.9.0:
     resolution: {integrity: sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==}
     engines: {node: '>=12.0.0'}
+    deprecated: v4 is no longer maintained, upgrade to v5
 
   croner@9.0.0:
     resolution: {integrity: sha512-onMB0OkDjkXunhdW9htFjEhqrD54+M94i6ackoUkjHKbRnXdyEyKRelp4nJ1kAz32+s27jP1FsebpJCVl0BsvA==}
@@ -3048,6 +3049,7 @@ packages:
   eslint@9.29.0:
     resolution: {integrity: sha512-GsGizj2Y1rCWDu6XoEekL3RLilp0voSePurjZIkxL3wlm5o5EC9VpgaP7lrCvjnkuLvzFBQWB3vWB3K5KQTveQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -4776,6 +4778,10 @@ packages:
   output-files@2.0.32:
     resolution: {integrity: sha512-E4lArd+sN7ILmv2jAasFoXP6XGvaKGTYNKSNHBn+zcGSWzrYXye5Y5L6v2yCrDyXESGKVGrvr5fsd8TUvRYvOQ==}
     engines: {node: '>=14'}
+
+  output-files@4.0.0:
+    resolution: {integrity: sha512-WfOFV7mEwTisw3atSd2PcMx0+6ZrQk3iYRu6mwQS54XN6d3I5PWqDoT4T6nBdIxiDQFNyEoLOJvciyeCMLcaCQ==}
+    engines: {node: '>=22'}
 
   oxc-parser@0.70.0:
     resolution: {integrity: sha512-YbqTuQDDIYwQF/li0VFK5uTbmHV4jWFeQQONkPdf77vz+JMiq7SusmcSVZ4hBrGM+3WyLdKH5S7spnvz4XVVzQ==}
@@ -12082,6 +12088,10 @@ snapshots:
   output-files@2.0.32:
     dependencies:
       '@dword-design/functions': 4.1.7
+      fs-extra: 11.3.0
+
+  output-files@4.0.0:
+    dependencies:
       fs-extra: 11.3.0
 
   oxc-parser@0.70.0:
